@@ -15400,7 +15400,7 @@ header.nav-fixed {
 }
 
 .w3l-main-slider .banner-view {
-  background: url(../images/clg.jpg) no-repeat center;
+  background: url(../clg/6.jpeg) no-repeat center;
   background-size: cover;
   min-height: 100vh;
   position: relative;
@@ -15411,17 +15411,17 @@ header.nav-fixed {
 }
 
 .w3l-main-slider .banner-top1 {
-  background: url(../images/banner1.jpg) no-repeat center;
+  background: url(../clg/5.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top2 {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(../clg/1.jpeg) no-repeat center;
   background-size: cover;
 }
 
 .w3l-main-slider .banner-top3 {
-  background: url(../images/banner4.jpg) no-repeat center;
+  background: url(../clg/4.jpeg) no-repeat center;
   background-size: cover;
 }
 
@@ -16210,7 +16210,7 @@ p.count-text {
 /*--//--*/
 /* middle */
 .middle {
-  background: url(../images/clg.jpg) no-repeat center;
+  background: url(../clg/6.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -17090,7 +17090,7 @@ div#small-dialog iframe {
 /*-- //play icon animation --*/
 
 .w3l-videohny .history-info{
-  background: url(../images/clg.jpg) no-repeat center;
+  background: url(../clg/6.jpeg) no-repeat center;
   background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
@@ -17419,7 +17419,7 @@ ul.page-pagination li a.next:hover {
 /*--//blog--*/
 /*--/inner-banner--*/
 .inner-banner {
-  background: url(../images/banner3.jpg) no-repeat center;
+  background: url(../clg/6.jpeg) no-repeat center;
   background-size: cover;
   min-height: 300px;
   position: relative;
@@ -18888,7 +18888,28 @@ a.blog-desc1:hover {
   justify-content: center;
   align-items: center;
 }
-
+.myButton {
+	background:linear-gradient(to bottom, #5545c7 5%, #2a4ebd 100%);
+	background-color:#5545c7;
+	border-radius:28px;
+	border:1px solid #194aab;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #2a4ebd 5%, #5545c7 100%);
+	background-color:#2a4ebd;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
 /* / contact1-responsive */
 /* /contact1 */
 
