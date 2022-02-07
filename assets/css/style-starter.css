@@ -18975,15 +18975,21 @@ a.blog-desc1:hover {
   background-color: white;
   box-shadow: 2px 2px 5px blue;
   padding: 0;
-  margin: 0;
-  padding: 0px 5px 10px 5px;
+  margin: 0; 
 }
 
 .myul li {
   margin-bottom: 5px;
   width: 100%;
+  color:black !important;
+}
+.myul li a { 
+  width: 100%; 
 }
 
+.myul li :hover{
+  color:orange;
+}
 .nav-item:hover .myul {
   display: block !important;
 }
