@@ -18,6 +18,21 @@ video {
   width: 100%;
   height: auto;
 }
+        .news-slider {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-slide {
+    width: 100%;
+    display: none;
+    padding: 20px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-size: 16px;
+}
+
 </style>
 </head>
 
@@ -148,7 +163,49 @@ video {
         </div>
     </header>
     <!--/header-->
-    
+    <div class="news-slider">
+    <div class="news-slide">Important Notice:
+       Post 12th 5 year B.A.LL.B  admission process for this course has started. However, interested students should contact the college.
+For more information visit Law College. *
+Contact:- 9561958776/9561958776:</div>
+
+    <!-- Add more news slides as needed -->
+    </div>
+    <script>
+    // Add this script after your HTML content or in an external JavaScript file
+
+    // Get all news slides
+    const newsSlides = document.querySelectorAll('.news-slide');
+
+    let slideIndex = 0;
+
+    function showSlide(index) {
+        if (index < 0) {
+            slideIndex = newsSlides.length - 1;
+        } else if (index >= newsSlides.length) {
+            slideIndex = 0;
+        }
+
+        // Hide all slides
+        newsSlides.forEach(slide => {
+            slide.style.display = 'none';
+        });
+
+        // Show the selected slide
+        newsSlides[slideIndex].style.display = 'block';
+    }
+
+    // Initial slide display
+    showSlide(slideIndex);
+
+    // Auto change slide every 5 seconds (adjust as needed)
+    setInterval(() => {
+        slideIndex++;
+        showSlide(slideIndex);
+    }, 5000); // Change slide every 5 seconds
+</script>
+
+
     <!-- main-slider -->
     <section class="w3l-main-slider" id="home">
         <div class="companies20-content">
@@ -189,28 +246,7 @@ video {
                                 <div class="container">
                                     <div class="banner-info-bg">
                                         <br><br>
-            <div class="notice-slider">
-    <div class="notice-slide">
-        <h3>Important Notice:</h3>
-        <p><b> Post 12th 5 year B.A.LL.B  admission process for this course has started. However, interested students should contact the college.
-For more information visit Law College. *
-Contact:- 9561958776/9561958776:</b></p>
-    </div>
-                <script>
-    $(document).ready(function(){
-        $('.notice-slider').slick({
-            autoplay: true, // Autoplay the slider
-            autoplaySpeed: 5000, // Autoplay interval in milliseconds
-            dots: true, // Show dots navigation
-            arrows: false, // Hide arrow navigation
-            slidesToShow: 1, // Number of slides to show at once
-            slidesToScroll: 1, // Number of slides to scroll at once
-        });
-
-        // Initialize AOS library for animations
-        AOS.init();
-    });
-</script>
+           
 
     <!-- Add more notice slides here as needed -->
 </div>
