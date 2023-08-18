@@ -34,11 +34,34 @@ video {
     color: blue;
     text-decoration: underline;
 }
+         .popup-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: white;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      z-index: 1000;
+    }
+    
+    /* Style for the close button */
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
 
 </style>
 </head>
 
 <body>
+    <div id="popup" class="popup-container">
+  <span class="close-button" onclick="closePopup()">&times;</span>
+  <img src="assets/images/banner-popup.png" alt="Popup Image" width="400">
+</div>
     <div class="notice-slider">
     <marquee direction="right" height="100px">
         <h3>Important Notice:
@@ -1155,5 +1178,17 @@ og itself, mfp-hide class is required to make dialog hidden
         AOS.init();
     </script>
  
+<script>
+  window.onload = function() {
+    openPopup();
+  };
 
+  function openPopup() {
+    document.getElementById("popup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script>
 </html>
