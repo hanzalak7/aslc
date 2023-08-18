@@ -34,7 +34,7 @@ video {
     color: blue;
     text-decoration: underline;
 }
-         .popup-container {
+      .popup-container {
       display: none;
       position: fixed;
       top: 50%;
@@ -53,14 +53,18 @@ video {
       top: 10px;
       right: 10px;
       cursor: pointer;
-
+          /* Responsive image styling */
+    .popup-image {
+      max-width: 100%;
+      height: auto;
+    }
 </style>
 </head>
 
 <body>
     <div id="popup" class="popup-container">
   <span class="close-button" onclick="closePopup()">&times;</span>
-  <img src="assets/images/banner-popup.png" alt="Popup Image" width="600">
+  <img src="assets/images/banner-popup.png" alt="Popup Image" class="popup-image">
 </div>
     <div class="notice-slider">
     <marquee direction="right" height="100px">
