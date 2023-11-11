@@ -6,22 +6,98 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>ADS Law College</title>
-    <!--/google-fonts-->
-    <link href="//fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <!--//google-fonts-->
+    
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <style>
+
+
 video {
   width: 100%;
   height: auto;
 }
+        .notice-slider {
+    background-color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+.notice-slider h3 {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.notice-slider a {
+    color: blue;
+    text-decoration: underline;
+}
+        
+/* CSS for the popup */
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999999; /* Set a high z-index */
+
+    overflow: hidden;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    width: auto;
+    max-width: 600px;
+    max-width: 100%; /* Adjusted to fill the popup */
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 44px;
+    cursor: pointer;
+}
+.popup-image {
+    max-width: 100%;
+    max-height: 80vh; /* Set a maximum height relative to viewport height */
+    width: auto; /* Maintain aspect ratio for responsiveness */
+    height: auto; /* Allow the image to scale down if needed */
+}
+
 </style>
 </head>
 
 <body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfxEkJj7Ltpq8hSkjlOt5gcZj_16nccoc5NpbUagku8_38bAQ/viewform">
+  <img src="assets/images/Image banner ads.png" alt="Popup Image" class="popup-image"></a>
+</div></div>
+
+
+    
+    <div class="notice-slider">
+    <marquee direction="right" height="100px">
+        <h3>Important Notice:
+       Post 12th 5 year B.A.LL.B  admission process for this course has started. However, interested students should contact the college.
+For more information visit Law College. *
+Contact:- 9561958776/9561958776:</h3>
+    </marquee><br>
+</div>
     <!--header-->
     <header id="site-header" class="fixed-top">
         <div class="containerd" style="width: 100%!important;">
@@ -92,8 +168,11 @@ video {
                                     <li>
                                         <a href="Courses">LLB</a>
                                     </li>
-                                    <li>
+                                     <li>
                                         <a href="llm">LLM</a>
+                                    </li>
+                                    <li>
+                                        <a href="syllabus">Syllabus</a>
                                     </li>
                                 </ul>
                             </a>
@@ -104,9 +183,13 @@ video {
                                     <li>
                                         <a href="Courses">LLB</a>
                                     </li>
-                                    <li>
+                                     <li>
                                         <a href="llm">LLM</a>
                                     </li>
+                                    <li>
+                                        <a href="syllabus">Syllabus</a>
+                                    </li>
+                                    
                                 </ul>
                             </a>
                         </li>
@@ -162,9 +245,6 @@ video {
                                     <div class="banner-info-bg">
                                         <br><br>
                                         
-                                            <marquee direction="right" height="100px"><h3>
-  <b>Important Notice:</b>LLB 5 Yrs - CET- 2023 <a href="https://admissions20.blob.core.windows.net/llb52023/dtefiles/files/36.pdf?did=2327"> Click here </a></h3>
-</marquee>
                                      
                                        
                                         <h5>Ashokdada Sable law college Mangaon, Raigad, Maharashtra</h5>
@@ -193,9 +273,9 @@ video {
                                     <div class="banner-info-bg">
                                         <br><br>
             
-                                                                         <marquee direction="right" height="100px"><h3>
+<!--                                                                          <marquee direction="right" height="100px"><h3>
   <b>Important Notice:</b>LLB 5 Yrs - CET- 2023 <a href="https://admissions20.blob.core.windows.net/llb52023/dtefiles/files/36.pdf?did=2327"> Click here </a></h3>
-</marquee>
+</marquee> -->
             
                                           
                                         <h5>Ashokdada Sable law college Mangaon, Raigad, Maharashtra</h5>
@@ -221,9 +301,7 @@ video {
                                     <div class="banner-info-bg">
                                         <br><br>
                                            
-                                                              <marquee direction="right" height="100px"><h3>
-  <b>Important Notice:</b>LLB 5 Yrs - CET- 2023 <a href="https://admissions20.blob.core.windows.net/llb52023/dtefiles/files/36.pdf?did=2327"> Click here </a></h3>
-</marquee>
+                                                            
                     
                                         
                                         <h5>Ashokdada Sable law college Mangaon, Raigad, Maharashtra</h5>
@@ -248,9 +326,6 @@ video {
                                 <div class="container">
                                     <div class="banner-info-bg">
                                         <br><br>
-                                             <marquee direction="right" height="100px"><h3>
-  <b>Important Notice:</b>LLB 5 Yrs - CET- 2023 <a href="https://admissions20.blob.core.windows.net/llb52023/dtefiles/files/36.pdf?did=2327"> Click here </a></h3>
-</marquee>
                                              
                                          
                                         <h5>Ashokdada Sable law college Mangaon, Raigad, Maharashtra</h5>
@@ -1137,6 +1212,20 @@ og itself, mfp-hide class is required to make dialog hidden
     <script>
         AOS.init();
     </script>
- 
+ </sect>
+ <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var popup = document.getElementById('popup');
+    var closePopup = document.getElementById('close-popup');
 
+    // Open the popup when the page loads
+    popup.style.display = 'block';
+
+    // Close the popup when the close button is clicked
+    closePopup.addEventListener('click', function () {
+        popup.style.display = 'none';
+    });
+});
+  </script>
+ </body>
 </html>
