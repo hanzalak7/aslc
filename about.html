@@ -18,20 +18,20 @@
 		.uiiw img {
     filter: invert(1) brightness(0);
 }
-		.uwy .uai:hover {
-    background: #ad8d73 !important; /* Change color as per your requirement */
-    border-radius: 50%;
+		.uwy .uai {
+    position: relative;
 }
 
-.uwy .uai:hover span.uiiw img {
-    display: none;
+.uwy .uai:hover::after {
+    content: "Reviews";
+    position: absolute;
+    left: -50px; /* Adjust as needed */
+    top: 0;
+    background: #ad8d73; /* Change color as per your requirement */
+    padding: 5px;
+    border-radius: 5px;
+    color: white; /* Change text color as per your requirement */
 }
-
-.uwy .uai:hover span.usr {
-    display: inline-block;
-    background-image: url('https://cdn.userway.org/widgetapp/images/body_bl.svg');
-    width: 43px;
-    height: 43px;
 }
 	</style>
 	<script src="https://cdn.userway.org/widget.js" data-account="9uJzBpx9YH"></script>
